@@ -20,7 +20,7 @@ import javax.swing.JTextField;
 public class EditData extends JFrame {
     ControllerKandidat controller;
     
-    JLabel header = new JLabel("Input Dosen");
+    JLabel header = new JLabel("Input Kandidat");
     JLabel labelInputNama = new JLabel("Nama");
     JLabel labelInputPath = new JLabel("Path");
     JLabel labelInputWriting = new JLabel("Writing");
