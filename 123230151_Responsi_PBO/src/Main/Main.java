@@ -4,9 +4,10 @@
  */
 package Main;
 
+import View.*;
 /**
  *
- * @author ASUS
+ * 123230151_Auladi Fachry Assidiqi
  */
 public class Main {
 
@@ -14,7 +15,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        new ViewData();
     }
     
 }
