@@ -13,7 +13,7 @@ import java.sql.*;
 public class Connector {
     public static String jdbc_driver = "com.mysql.cj.jdbc.Driver";
     public static String nama_db = "recruit_db";
-    public static String url_db = "jdbc::mysql://localhost:3306/" + nama_db;
+    public static String url_db = "jdbc:mysql://localhost:3306/" + nama_db;
     public static String username_db = "root";
     public static String password_db = "";
     

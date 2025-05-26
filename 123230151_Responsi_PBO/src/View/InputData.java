@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package View;
 
 import Controller.*;
@@ -12,15 +8,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-/**
- *
- * @author ASUS
- */
 public class InputData extends JFrame {
 
     ControllerKandidat controller;
 
-    JLabel header = new JLabel("Input Dosen");
+    JLabel header = new JLabel("Input Kandidat");
     JLabel labelInputNama = new JLabel("Nama");
     JLabel labelInputPath = new JLabel("Path");
     JLabel labelInputWriting = new JLabel("Writing");
@@ -28,6 +20,7 @@ public class InputData extends JFrame {
     JLabel labelInputInterview = new JLabel("Interview");
     JLabel labelInputScore = new JLabel("Score");
     JLabel labelInputStatus = new JLabel("Status");
+
     JTextField inputNama = new JTextField();
     JTextField inputPath = new JTextField();
     JTextField inputWriting = new JTextField();
@@ -35,52 +28,72 @@ public class InputData extends JFrame {
     JTextField inputInterview = new JTextField();
     JTextField inputScore = new JTextField();
     JTextField inputStatus = new JTextField();
+
     JButton tombolTambah = new JButton("Tambah Kandidat");
     JButton tombolKembali = new JButton("Kembali");
 
     public InputData() {
         setTitle("Input Kandidat");
         setVisible(true);
-        setSize(480, 240);
+        setSize(500, 600); // Ukuran lebih realistis
         setLayout(null);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         add(header);
         add(labelInputNama);
-        add(labelInputPath);
-        add(labelInputWriting);
-        add(labelInputCoding);
-        add(labelInputInterview);
-        add(labelInputScore);
-        add(labelInputStatus);
         add(inputNama);
+        add(labelInputPath);
         add(inputPath);
+        add(labelInputWriting);
         add(inputWriting);
+        add(labelInputCoding);
         add(inputCoding);
+        add(labelInputInterview);
         add(inputInterview);
+        add(labelInputScore);
         add(inputScore);
+        add(labelInputStatus);
         add(inputStatus);
         add(tombolTambah);
         add(tombolKembali);
 
-        header.setBounds(20, 8, 440, 24);
-        labelInputNama.setBounds(20, 32, 440, 24);
-        inputNama.setBounds(18, 56, 440, 36);
-        labelInputPath.setBounds(20, 96, 440, 24);
-        inputPath.setBounds(18, 120, 440, 36);
-        labelInputWriting.setBounds(20, 96, 440, 24);
-        inputWriting.setBounds(18, 120, 440, 36);
-        labelInputCoding.setBounds(20, 96, 440, 24);
-        inputCoding.setBounds(18, 120, 440, 36);
-        labelInputInterview.setBounds(20, 96, 440, 24);
-        inputInterview.setBounds(18, 120, 440, 36);
-        labelInputScore.setBounds(20, 96, 440, 24);
-        inputScore.setBounds(18, 120, 440, 36);
-        labelInputStatus.setBounds(20, 96, 440, 24);
-        inputStatus.setBounds(18, 120, 440, 36);
-        tombolKembali.setBounds(20, 160, 215, 40);
-        tombolTambah.setBounds(240, 160, 215, 40);
+        int y = 20;
+        int spacing = 60;
+
+        header.setBounds(20, y, 200, 24);
+        y += spacing;
+
+        labelInputNama.setBounds(20, y, 100, 24);
+        inputNama.setBounds(150, y, 300, 24);
+        y += spacing;
+
+        labelInputPath.setBounds(20, y, 100, 24);
+        inputPath.setBounds(150, y, 300, 24);
+        y += spacing;
+
+        labelInputWriting.setBounds(20, y, 100, 24);
+        inputWriting.setBounds(150, y, 300, 24);
+        y += spacing;
+
+        labelInputCoding.setBounds(20, y, 100, 24);
+        inputCoding.setBounds(150, y, 300, 24);
+        y += spacing;
+
+        labelInputInterview.setBounds(20, y, 100, 24);
+        inputInterview.setBounds(150, y, 300, 24);
+        y += spacing;
+
+        labelInputScore.setBounds(20, y, 100, 24);
+        inputScore.setBounds(150, y, 300, 24);
+        y += spacing;
+
+        labelInputStatus.setBounds(20, y, 100, 24);
+        inputStatus.setBounds(150, y, 300, 24);
+        y += spacing;
+
+        tombolKembali.setBounds(20, y, 200, 30);
+        tombolTambah.setBounds(250, y, 200, 30);
 
         controller = new ControllerKandidat(this);
 
@@ -107,23 +120,23 @@ public class InputData extends JFrame {
     public String getInputPath() {
         return inputPath.getText();
     }
-    
+
     public String getInputWriting() {
         return inputWriting.getText();
     }
-    
+
     public String getInputCoding() {
         return inputCoding.getText();
     }
-    
+
     public String getInputInterview() {
         return inputInterview.getText();
     }
-    
+
     public String getInputScore() {
         return inputScore.getText();
     }
-    
+
     public String getInputStatus() {
         return inputStatus.getText();
     }

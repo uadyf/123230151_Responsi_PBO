@@ -71,7 +71,7 @@ public class ControllerKandidat {
 
             daoKandidat.insert(kandidatBaru);
 
-            JOptionPane.showMessageDialog(null, "Dosen baru berhasil ditambahkan.");
+            JOptionPane.showMessageDialog(null, "Kandidat baru berhasil ditambahkan.");
 
             halamanInput.dispose();
             new ViewData();
